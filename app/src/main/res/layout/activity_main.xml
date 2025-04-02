@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/titleText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Meal Suggestion App"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/timeInput"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_below="@id/titleText"
+        android:layout_marginTop="20dp"
+        android:hint="Enter Time of Day (e.g., Morning, Lunch)" />
+
+    <Button
+        android:id="@+id/suggestButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/timeInput"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="Get Suggestion" />
+
+    <TextView
+        android:id="@+id/suggestionText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/suggestButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="Your meal suggestion will appear here"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/resetButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/suggestionText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="Reset" />
+
+</RelativeLayout>
